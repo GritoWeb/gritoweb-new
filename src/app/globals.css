@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font: "Lexend", sans-serif;
+}
+
+body {
+  font-family: var(--font);
+}
+
+p {
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: 1,5rem;
+}
+
+h2 {
+  font-size: 2,5rem;
+}
+
+h1 {
+  font-size: 4rem;;
+}
