@@ -2,6 +2,14 @@
 
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #1A5EAB;
+  --color-secondary: #FE9D2B;
+  --color-accent-100: #FCFBF8;
+  --color-accent-300: #EEEEEE;
+  --color-accent-500: #707070;
+  --color-background: #F6F5F2;
+}
 
 :root {
   --background: #ffffff;
@@ -17,14 +25,25 @@ p {
   font-size: 1rem;
 }
 
+h4 {
+  font-size: 1.5rem;
+}
+
 h3 {
-  font-size: 1,5rem;
+  font-size: 2rem;
+  line-height: 2rem;
 }
 
 h2 {
-  font-size: 2,5rem;
+  font-size: 2.5rem; 
+  line-height: 2.7rem;
 }
 
 h1 {
-  font-size: 4rem;;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+strong{
+  font-size: 4rem;
 }
