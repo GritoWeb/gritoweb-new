@@ -10,7 +10,7 @@ export default function Header(){
                 width={100} />
                 <div>menu</div>
             </div>
-            <hr className="border-white"/>
+            <hr className="border-accent-300"/>
         </header>
     )
 }

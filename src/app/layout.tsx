@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Contato from "./components/Contato";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,13 +30,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
-        <div className="px-8 py-6 bg-background">
+        <div className="px-8 py-6 bg-background lg:px-32">
           <Header/>
         </div>
-        <div className="px-8 py-6 bg-background">
+        <div>
           {children}
         </div>
-        <div className="px-8 py-6 bg-primary">
+        <div>
+          <Contato />
+        </div>
+        <div className="px-8 py-6 bg-primary lg:px-32">
           <Footer />
         </div>
       </body>
