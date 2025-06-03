@@ -1,4 +1,4 @@
-import Logo from "../../../public/icons/gritoweb-logo-reverse.svg"
+import Logo from "../../assets/icons/gritoweb-logo-reverse.svg"
 import Image from "next/image"
 
 export default function Footer() {

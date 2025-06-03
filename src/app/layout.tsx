@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Contato from "./components/Contato";
+import "../styles/globals.css";
+import Header from "../components/layout/Header";
+import Footer from "../components/layout/Footer";
+import Contato from "../components/layout/Contato";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,7 +36,7 @@ export default function RootLayout({
         <div>
           {children}
         </div>
-        <div>
+        <div className="px-8 py-6 bg-background lg:px-32">
           <Contato />
         </div>
         <div className="px-8 py-6 bg-primary lg:px-32">
