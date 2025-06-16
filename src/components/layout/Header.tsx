@@ -39,10 +39,10 @@ export default function Header(){
                 {/* Menu Desktop */}
                 <div className="hidden lg:block">
                     <ul className="flex justify-between gap-16">
-                        <li><Link className="font-light uppercase text-primary" href="/sobrenos">GritoWeb</Link></li>
-                        <li><Link className="font-light uppercase text-primary" href="/servicos">Serviços</Link></li>
-                        <li><Link className="font-light uppercase text-primary" href="#clientes">Clientes</Link></li>
-                        <li><Link className="font-light uppercase text-primary" href="/contato">Contato</Link></li>
+                        <li><Link className={`font-light uppercase ${pathname == "/sobrenos" ? "text-secondary": "text-primary"}`} href="/sobrenos">GritoWeb</Link></li>
+                        <li><Link className={`font-light uppercase ${pathname == "/servicos" ? "text-secondary": "text-primary"}`} href="/servicos">Serviços</Link></li>
+                        <li><Link className={`font-light uppercase text-primary`} href="/#clientes">Clientes</Link></li>
+                        <li><Link className={`font-light uppercase ${pathname == "/contato" ? "text-secondary": "text-primary"}`} href="/contato">Contato</Link></li>
                     </ul>
                 </div>
             </div>

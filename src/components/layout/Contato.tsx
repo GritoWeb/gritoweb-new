@@ -33,15 +33,15 @@ export default function Contato() {
                     </div>
                 </div>
 
-                <div className="lg:w-[33%] hidden lg:block">
-                    <Image src={ImagemContato} alt="Imagem de contato"/>
+                <div className="lg:w-[33%] hidden lg:block ">
+                    <Image src={ImagemContato} alt="Imagem de contato"  />
                 </div>
             </div>
 
             
 
             <div className="flex justify-center mt-8 lg:hidden">
-                <Image src={ImagemContato} alt="Contate-nos" width={220} />
+                <Image src={ImagemContato} alt="Contate-nos" width={220} className="mb-[-0.3rem] lg:mb-0" />
             </div>
         </div>
     )

@@ -10,7 +10,7 @@ export default function Contato() {
     return(
         <>
         
-        <div className="p-8 lg:gap-16 lg:py-48 lg:px-64 bg-background lg:flex lg:jusify-evenly lg:items-center relative z-[-3]">
+        <div className="p-8 lg:gap-16 lg:py-48 lg:px-64 bg-background lg:flex lg:jusify-evenly lg:items-center relative z-[-3] overflow-x-hidden">
             <Image src={EstrelaImg} alt="" className="absolute top-0 right-0 z-[-1] lg:left-[43%] lg:top-25" />
             <div className="lg:w-[55%] mb-32">
                 <h2 className="text-primary font-extralight">Fale com nossos especialistas e <br/>

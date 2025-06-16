@@ -12,9 +12,9 @@ interface CardFuncDados {
 export default function CardFunc ({ img, imgAlt, title, subTitle, text1, text2 }: CardFuncDados) {
     return(
         <>
-            <div className="lg:flex lg:justify-evenly lg:items-center bg-white rounded-4xl p-8 lg:p-0 relative">
+            <div className="lg:flex lg:justify-evenly lg:items-center bg-white lg:rounded-r-4xl lg:rounded-l-full p-8 lg:p-0">
                 <div>
-                    <Image src={img} alt={imgAlt} className=" lg:max-w-[490px]" />
+                    <Image src={img} alt={imgAlt} className=" lg:max-w-[490px] rounded-full" />
                 </div>
                 <div className="lg:w-[70%] lg:p-8">
                     <div>
