@@ -12,42 +12,36 @@ TailwindCSS para estilos
 # 📁 Estrutura de Pastas
 
 ```bash
-src/
-├── app/                     # Diretório principal (App Router do Next.js)
-│   ├── layout.tsx           # Layout principal do site
-│   ├── page.tsx             # Página inicial
-│   └── globals.css          # Estilos globais
-│
-├── components/              # Componentes genéricos reutilizáveis
-│   └── ui/                  # Elementos visuais puros e desacoplados (opcional)
-│
-├── features/                # Funcionalidades principais do site (caso use mais domínios)
-│   └── contato/             # Exemplo: funcionalidade de formulário de contato
-│       ├── components/
-│       ├── hooks/
-│       └── services/
-│
-├── layouts/                 # Layouts reutilizáveis além do principal
-├── hooks/                   # Hooks reutilizáveis e independentes
-├── utils/                   # Funções auxiliares (formatadores, helpers, etc)
-├── services/                # Configuração de serviços globais (ex: api.ts)
-├── constants/               # Constantes globais do sistema
-├── config/                  # Configurações gerais (tema, env, etc)
-└── types/                   # Tipagens globais
+.
+├── .next/                 # Arquivos gerados pelo Next.js (build)
+├── node_modules/          # Dependências do projeto
+├── public/                # Arquivos estáticos acessíveis publicamente
+├── src/                   # Código-fonte da aplicação
+│   ├── app/               # Rotas e páginas do Next.js (App Router)
+│   │   ├── contato/       # Página de contato
+│   │   ├── servicos/      # Página de serviços
+│   │   ├── sobre-nos/     # Página sobre nós
+│   │   ├── layout.tsx     # Layout raiz da aplicação
+│   │   └── page.tsx       # Página principal
+│   ├── assets/            # Imagens e outros arquivos visuais
+│   ├── components/        # Componentes reutilizáveis
+│   │   ├── layout/        # Componentes relacionados ao layout
+│   │   ├── sections/      # Seções das páginas
+│   │   └── ui/            # Componentes de interface (UI)
+│   └── styles/            # Arquivos de estilo global
+│       └── globals.css
+├── .gitignore             # Arquivos/ pastas ignoradas pelo Git
+├── eslint.config.mjs      # Configuração do ESLint
+├── next-env.d.ts          # Tipagens do Next.js
+├── next.config.ts         # Configurações do Next.js
+├── package-lock.json      # Travamento de versões das dependências
+├── package.json           # Informações e dependências do projeto
+├── postcss.config.mjs     # Configuração do PostCSS
+├── README.md              # Documentação do projeto
+└── tsconfig.json          # Configuração do TypeScript
+
 ```
 
-# Arquivos na raiz do projeto
-
-```bash
-.next/
-node_modules/
-package.json
-tsconfig.json
-postcss.config.mjs
-eslint.config.mjs
-next.config.ts
-README.md
-```
 
 
 # ⚡️ Instalando Dependências do Projeto

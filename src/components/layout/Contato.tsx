@@ -1,6 +1,6 @@
 import LogoMin from "../../assets/icons/gritoweb-favicon.svg"
 import Image from "next/image"
-import ImagemContato from "../../assets/images/gritoweb-person-asset-4.png"
+import ImagemContato from "../../assets/images/contato.svg"
 import Setas from "../../assets/icons/gritoweb-arrow-path.svg"
 import Link from "next/link"
 
@@ -14,7 +14,7 @@ export default function Contato() {
             </div>
 
 
-            <div className="flex justify-evenly items-center">
+            <div className="flex justify-evenly items-center lg:mb-[-8px]">
                 <div className="hidden lg:block lg:w-[33%]">
                     <Image src={Setas} alt="Sequência de setas" />
                     <div className="flex gap-2 justify-center">
@@ -25,11 +25,11 @@ export default function Contato() {
 
                 <div className="flex justify-center items-center flex-col mt-12 lg:m-0 gap-4 lg:w-[33%]"> 
                     <div className="border-3 text-primary px-4 py-2 rounded-4xl text-center lg:w-[320px]">
-                        <span className="text-sm lg:text-2xl">contato@gritoweb.com</span>
+                        <Link href="mailto:contato@gritoweb.com" className="text-sm lg:text-2xl">contato@gritoweb.com</Link>
                     </div>
 
                     <div className="border-3 border-[#1AAB93] text-primary px-4 py-2 text-center rounded-4xl lg:w-[320px]">
-                        <span className="text-xl lg:text-2xl">(15) 99739-4486</span>
+                        <Link href="tel:15997394486" className="text-xl lg:text-2xl">(15) 99739-4486</Link>
                     </div>
                 </div>
 

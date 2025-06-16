@@ -3,6 +3,9 @@ import Servico1 from "../../assets/images/gritoweb-person-asset-1.png"
 import Servico2 from "../../assets/images/gritoweb-person-asset-2.png"
 import Servico3 from "../../assets/images/gritoweb-person-asset-3.png"
 
+import Botao from "../ui/Botao"
+import Link from "next/link"
+
 export default function PrincipaisServicos() {
     return(
         <>
@@ -12,7 +15,10 @@ export default function PrincipaisServicos() {
                 </div>
 
                 {/* Serviço Wordpress */}
-                <div className="lg:flex lg:justify-around lg:gap-4 lg:px-16">
+                <div className=" lg:px-16">
+                    <div className="lg:flex lg:justify-around lg:gap-4">
+
+
                     <div className="mt-18">
                     <div className="border-primary border-3 rounded-xl p-6 lg:h-97">
                         <div className="mt-[-80px] flex justify-center pt-5">
@@ -62,8 +68,18 @@ export default function PrincipaisServicos() {
                             </div>
                         </div>
                     </div>
+                    </div>
+
+                    <div className="hidden lg:flex justify-end">
+                        <Link href="/" className="text-primary text-4xl font-semibold hover:text-secondary">Saiba Mais</Link>
+                    </div>
                 </div>
-            
+
+                {/* BOTÃO Saiba Mais */}
+                <div className="flex justify-center mt-36 lg:hidden">
+                    <Botao url="/">Saiba Mais</Botao>
+                </div>
+        
             </section>
         </>
     )

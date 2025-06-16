@@ -14,7 +14,7 @@ export default function Hero({ title, titleBold, subTitle, tag, img }: HeroDados
             <div className="lg:flex lg:justify-between items-center lg:px-64">
                 <div>
                     <h1 className="text-primary font-light">{title}<br /><strong className="font-bold lg:font-black">{titleBold}</strong></h1>
-                    <span className="text-5xl text-secondary lowercase">{subTitle}<span className={`bg-secondary text-white px-[2px] rounded-lg ${tag === null ? "hidden" : ""} `}>{tag}</span></span>
+                    <span className="text-2xl  lg:text-5xl text-secondary lowercase">{subTitle}<span className={`bg-secondary text-white px-[2px] rounded-lg ${tag === null ? "hidden" : ""} `}>{tag}</span></span>
                 </div>
 
                 {/* Hero - pegar imagem certa do hero */}

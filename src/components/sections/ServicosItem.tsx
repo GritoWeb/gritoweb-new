@@ -13,7 +13,7 @@ interface ServicosDados {
 
 export default function ServicosItem( {title, titleSec, subTitle, text, text2, image, inverter}:ServicosDados ) {
     return(
-        <div className={`lg:flex lg:items-center lg:justify-between ${inverter === true ? "lg:flex-row-reverse" : ""}`}>
+        <div className={`lg:flex lg:gap-16 lg:items-center lg:justify-between ${inverter === true ? "lg:flex-row-reverse" : ""}`}>
             <div >
                 <Image src={image} alt="Serviço" />
             </div>
