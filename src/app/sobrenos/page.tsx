@@ -15,7 +15,7 @@ import Link from "next/link"
 export default function SobreNos() {
     return(
         <>
-            <div className="flex flex-col lg:flex-row lg:justify-between items-center lg:px-64 bg-background px-8">
+            <div className="flex flex-col lg:flex-row lg:justify-between items-center lg:p-0 bg-background px-8">
 
                 <div className="mt-8 flex justify-center lg:w-[50%]">
                     <Image src={HeroIMg} 
@@ -31,7 +31,7 @@ export default function SobreNos() {
             </div>
 
 
-        <div className="lg:flex lg:flex-col lg:justify-between items-center lg:px-64 lg:gap-32 bg-background px-8">
+        <div className="lg:flex lg:flex-col lg:justify-between items-center lg:px-0 lg:gap-32 bg-background px-8">
             <div className="lg:my-16">
                 seta
             </div>
@@ -40,9 +40,9 @@ export default function SobreNos() {
             <ServicosItem title="Onde chegamos" titleSec="" subTitle="Contrary to popular belief, Lorem Ipsum is not simply random text." text="It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source." text2="" image={OndeChegamosImg} inverter={true} />
         </div>
 
-        <div className="lg:px-64 bg-background lg:py-16">
+        <div className=" bg-background lg:py-16">
             <MentesCriativas />
-            <div className="text-center lg:flex lg:flex-col lg:gap-4 lg:mt-48 lg:px-32 py-8">
+            <div className="text-center lg:flex lg:flex-col lg:gap-4 lg:mt-48 py-8">
                 <h2 className="text-primary font-bold">Conheça nossos serviços e soluções para o seu negócio</h2>
             </div>
             <div className="flex justify-center lg:mt-16">
@@ -52,7 +52,7 @@ export default function SobreNos() {
             </div>
         </div>
 
-        <div className="lg:px-64">
+        <div>
             <Clientes />
         </div>
             

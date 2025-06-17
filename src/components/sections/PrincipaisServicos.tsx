@@ -9,13 +9,13 @@ import Link from "next/link"
 export default function PrincipaisServicos() {
     return(
         <>
-            <section className="mt-12 p-4 lg:px-64">
+            <section className="mt-12 p-8 lg:px-0">
                 <div className="text-center lg:text-left">
                     <h2 className="capitalize text-primary font-bold">Principais <span className="text-secondary">serviços</span></h2>
                 </div>
 
                 {/* Serviço Wordpress */}
-                <div className=" lg:px-16">
+                <div className=" lg:px-16 px-4">
                     <div className="lg:flex lg:justify-around lg:gap-4">
 
 

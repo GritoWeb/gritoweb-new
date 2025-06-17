@@ -9,23 +9,9 @@ import Link from "next/link"
 export default function Header(){
     const pathname = usePathname();
 
-    if (pathname == "/contato"){
         return(
         <header>
-            <div className="flex justify-center pb-6 items-center lg:px-32">
-                <Link href="/">
-                    <Image src={Logo}
-                    alt="Logo GritoWeb"
-                    className="w-[100px] lg:w-[200px]" />
-                </Link>
-            </div>
-            <hr className="border-accent-300"/>
-        </header>
-    )
-    }else{
-        return(
-        <header>
-            <div className="flex justify-between pb-6 items-center lg:px-32">
+            <div className="flex justify-between pb-6 items-center">
                 <Link href="/">
                     <Image src={Logo}
                     alt="Logo GritoWeb"
@@ -52,4 +38,3 @@ export default function Header(){
     }
 
     
-}

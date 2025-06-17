@@ -16,11 +16,16 @@
   --background: #ffffff;
   --foreground: #171717;
   --font: "Lexend", sans-serif;
+  --color-background: #F6F5F2;
 }
 
 body {
   font-family: var(--font);
   overflow-x: hidden;
+  background-color: var(--color-background);
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 p {

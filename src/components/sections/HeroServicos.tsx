@@ -4,7 +4,7 @@ import HeroImg from "../../assets/images/solucoes-hero.png"
 export default function HeroServicos() {
     return (
         <>
-            <div className="lg:flex lg:justify-between lg:items-center lg:px-64 lg:mt-64">
+            <div className="lg:flex lg:justify-between lg:items-center lg:mt-64">
                 <div>
                     <h1 className="text-primary font-light">Soluções<br /><strong className="font-bold lg:font-black">inteligentes</strong></h1>
                     <span className="text-2xl  lg:text-5xl text-secondary lowercase">para o seu negócio</span>

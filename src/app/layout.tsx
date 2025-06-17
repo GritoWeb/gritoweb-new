@@ -17,14 +17,14 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body>
-        <div className="px-8 py-6 bg-background lg:px-32">
+        <div className="pt-8 px-8 lg:px-0">
           <Header />
         </div>
         <div>{children}</div>
-        <div className="px-8 pt-6 bg-background lg:px-32">
+        <div className="px-8 lg:px-0">
           <Contato />
         </div>
-        <div className="px-8 py-6 bg-primary lg:px-32">
+        <div className="bg-primary">
           <Footer />
         </div>
       </body>

@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
     {/* H1 */}
-      <div className="bg-background px-8 py-6 lg:px-0">
+      <div className="bg-background py-6">
         <Hero title="Estabeleça" titleBold="sua marca" subTitle="no mercado " tag="digital_" img={HeroImg} />
 
         {/* Texto Hero */}

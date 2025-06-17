@@ -6,7 +6,7 @@ import SetaBaixo from "../../assets/icons/gritoweb-icon-arrow-with-line-1.svg"
 export default function ComoTrabalhamos() {
     return(
         <>
-            <section className="bg-background px-8 py-6 mt-12 lg:px-64">
+            <section className="bg-background lg:pb-24  py-6 mt-12 px-8 lg:px-0">
             <div className="lg:flex lg:justify-between lg:items-center lg:flex-row-reverse">
                 <div className="mt-[-55px] lg:mt-0">
                     <Image src={ComoTrabalhamosImg} alt="Como Trabalhamos" />

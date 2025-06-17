@@ -9,10 +9,17 @@ interface CardFuncDados {
     text2: string | null;
 }
 
+const borderRadiusStyle = {
+  borderTopLeftRadius: "9999px",     
+  borderBottomLeftRadius: "9999px",  
+  borderTopRightRadius: "32px",      
+  borderBottomRightRadius: "32px",   
+};
+
 export default function CardFunc ({ img, imgAlt, title, subTitle, text1, text2 }: CardFuncDados) {
     return(
         <>
-            <div className="lg:flex lg:justify-evenly lg:items-center bg-white lg:rounded-r-4xl lg:rounded-l-full p-8 lg:p-0">
+            <div style={borderRadiusStyle} className="lg:flex lg:justify-evenly lg:items-center bg-white p-8 lg:p-0 ">
                 <div>
                     <Image src={img} alt={imgAlt} className=" lg:max-w-[490px] rounded-full" />
                 </div>
