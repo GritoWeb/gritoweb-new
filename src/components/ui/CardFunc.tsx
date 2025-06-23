@@ -32,8 +32,11 @@ export default function CardFunc ({ img, imgAlt, title, subTitle, text1, text2 }
     }, [isInView, controls]);
 
     const variants = {
-        hidden: { clipPath: "inset(0 100% 0 0)", opacity: 0 },
-        visible: { clipPath: "inset(0 0% 0 0)", opacity: 1, transition: { duration: 1, ease: "easeInOut" } }
+        hidden: { clipPath: "inset(0 100% 0 0)" },
+        visible: { 
+            clipPath: "inset(0 0% 0 0)", 
+            transition: { duration: 1, ease: [0.42, 0, 0.58, 1] }
+        }
     };
 
     return(

@@ -13,8 +13,16 @@ export default function Header(){
 
     const menuVariants = {
         hidden: { y: "-100%", opacity: 0 },
-        visible: { y: 0, opacity: 1, transition: { duration: 0.4, ease: "easeInOut" } },
-        exit: { y: "-100%", opacity: 0, transition: { duration: 0.3, ease: "easeInOut" } }
+        visible: { 
+            y: 0, 
+            opacity: 1, 
+            transition: { duration: 0.4, ease: [0.42, 0, 0.58, 1] } 
+        },
+        exit: { 
+            y: "-100%", 
+            opacity: 0, 
+            transition: { duration: 0.3, ease: [0.42, 0, 0.58, 1] } 
+        }
     };
 
     return(

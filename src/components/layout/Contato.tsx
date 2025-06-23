@@ -23,7 +23,10 @@ export default function Contato() {
 
     const variants = {
         hidden: { clipPath: "inset(0 100% 0 0)" },
-        visible: { clipPath: "inset(0 0% 0 0)", transition: { duration: 2, ease: "easeInOut" } }
+        visible: { 
+            clipPath: "inset(0 0% 0 0)", 
+            transition: { duration: 1, ease: [0.42, 0, 0.58, 1] } // Corrigido aqui
+        }
     };
 
     return(

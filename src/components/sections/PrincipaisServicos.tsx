@@ -26,13 +26,12 @@ export default function PrincipaisServicos() {
 
 
     const variants = {
-        hidden: { opacity: 0, clipPath: `inset(0 0 100% 0)` },
-        visible: (customDelay: number) => ({
-            opacity: 1,
-            clipPath: `inset(-100%)`,
-            transition: { duration: 1, delay: customDelay, ease: "easeInOut" }
-        })
-    }
+        hidden: { clipPath: "inset(0 100% 0 0)" },
+        visible: { 
+            clipPath: "inset(0 0% 0 0)", 
+            transition: { duration: 1, ease: [0.42, 0, 0.58, 1] }
+        }
+    };
 
     // Helper to handle animation complete for each card
     const handleAnimationComplete = (idx: number) => {
