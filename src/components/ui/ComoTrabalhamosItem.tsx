@@ -1,3 +1,5 @@
+'use client'
+import { motion } from "framer-motion";
 
 interface DadosComoTrabalhamos {
     title: string;
@@ -10,7 +12,9 @@ export default function ComoTrabalhamosItem( {numberItem, title, text1, text2}: 
     return(
         <div className="">
             <div className="flex items-center gap-2">
-                <span className="text-[86px] font-semibold text-secondary">{numberItem}.</span>
+                <span 
+                className="text-[86px] font-semibold text-secondary"
+                >{numberItem}.</span>
                 <h3 className="text-primary">{title}</h3>
             </div>
             <p className="text-accent-500 ">{text1}<br/><br/>{text2}</p>

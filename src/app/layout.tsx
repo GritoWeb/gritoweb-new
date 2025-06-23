@@ -24,7 +24,7 @@ export default function RootLayout({
         <div className="px-8 lg:px-0">
           <Contato />
         </div>
-        <div className="bg-primary">
+        <div className="bg-primary absolute w-[100vw] left-0 bottom -0">
           <Footer />
         </div>
       </body>

@@ -1,4 +1,4 @@
-import HeroImg from "../assets/images/hero-home.png"
+import { motion } from "framer-motion";
 
 import Hero from "../components/sections/Hero"
 import PrincipaisServicos from "../components/sections/PrincipaisServicos";
@@ -10,7 +10,7 @@ export default function Home() {
     <>
     {/* H1 */}
       <div className="bg-background py-6">
-        <Hero title="Estabeleça" titleBold="sua marca" subTitle="no mercado " tag="digital_" img={HeroImg} />
+        <Hero/>
 
         {/* Texto Hero */}
         <div className="mt-12">
@@ -37,4 +37,4 @@ export default function Home() {
       <ComoTrabalhamos />
     </>
   );
-}
+};
