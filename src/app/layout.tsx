@@ -16,7 +16,7 @@ export const metadata = {
     siteName: "GritoWeb",
     images: [
       {
-        url: "src/assets/icons/gritoweb-logo-hor.svg", // coloque sua imagem em /public/og-image.png
+        url: "/og-image.svg", // coloque sua imagem em /public/og-image.png
         width: 1200,
         height: 630,
         alt: "GritoWeb",
