@@ -20,13 +20,13 @@ export default function HeroServicos() {
 
 <motion.div
     initial={{ clipPath: "inset(0 0 0 100%)" }}
-    animate={{ clipPath: "inset(0 0% 0 0)" }}
+    animate={{ clipPath: "inset(-100%)" }}
     transition={{ duration: 1, ease: "easeInOut" }}
     className="my-8 flex justify-center lg:absolute lg:top-[5%] lg:left-[42%] lg:w-[850px] relative"
 >
     <motion.div
         initial={{ opacity: 0, y: -40 }}
-        animate={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 1, y: -10 }}
         transition={{ duration: 2, delay: 0.5, ease: "easeOut" }}
     >
         <Image

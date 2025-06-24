@@ -6,6 +6,11 @@ import Image from "next/image"
 
 import EstrelaImg from "@/assets/images/contato-estrela.svg"
 
+export const metadata = {
+  title: "GritoWeb | Contato",
+  // ...outros metadados...
+};
+
 export default function Contato() {
     return(
         <>

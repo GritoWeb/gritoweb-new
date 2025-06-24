@@ -1,6 +1,6 @@
 'use client'
 
-import {  motion, useAnimation } from "framer-motion";
+import {  Easing, motion, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { useInView } from "framer-motion";
 import Image from "next/image";
@@ -23,7 +23,7 @@ export default function ComoTrabalhamos() {
         hidden: { clipPath: "inset(0 100% 0 0)" },
         visible: { 
             clipPath: "inset(0 0% 0 0)", 
-            transition: { duration: 1, ease: [0.42, 0, 0.58, 1] }
+            transition: { duration: 1, ease: [0.42, 0, 0.58, 1] as Easing}
         }
     };
 

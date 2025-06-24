@@ -11,6 +11,10 @@ import Clientes from "@/components/sections/Clientes"
 
 import Link from "next/link"
 
+export const metadata = {
+  title: "GritoWeb | Sobre Nós",
+};
+
 
 export default function SobreNos() {
     return(

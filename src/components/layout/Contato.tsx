@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from "react";
-import { motion, useInView, useAnimation } from "framer-motion"
+import { motion, useInView, useAnimation, Easing } from "framer-motion"
 
 import LogoMin from "../../assets/icons/gritoweb-favicon.svg"
 import Image from "next/image"
@@ -25,7 +25,7 @@ export default function Contato() {
         hidden: { clipPath: "inset(0 100% 0 0)" },
         visible: { 
             clipPath: "inset(0 0% 0 0)", 
-            transition: { duration: 1, ease: [0.42, 0, 0.58, 1] } // Corrigido aqui
+            transition: { duration: 1, ease: [0.42, 0, 0.58, 1] as Easing } // Corrigido aqui
         }
     };
 

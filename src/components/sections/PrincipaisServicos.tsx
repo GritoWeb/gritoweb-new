@@ -1,6 +1,6 @@
 'use client'
 
-import { motion, useAnimation } from "framer-motion"
+import { Easing, motion, useAnimation } from "framer-motion"
 import { useRef, useEffect, useState } from "react"
 import { useInView } from "framer-motion"
 
@@ -28,8 +28,8 @@ export default function PrincipaisServicos() {
     const variants = {
         hidden: { clipPath: "inset(0 100% 0 0)" },
         visible: { 
-            clipPath: "inset(0 0% 0 0)", 
-            transition: { duration: 1, ease: [0.42, 0, 0.58, 1] }
+            clipPath: "inset(-100%)", 
+            transition: { duration: 1, ease: [0.42, 0, 0.58, 1] as Easing }
         }
     };
 
@@ -91,7 +91,7 @@ export default function PrincipaisServicos() {
                         <h3 className="text-primary mb-4 md:text-center">Soluções <span className="text-secondary">Digitais</span></h3>
                         <p className="text-accent-500 md:text-center">Conte com um time especialista em desenvolvimento de soluções para WordPress.</p>
                     </div>
-                    <div className="hidden lg:flex flex justify-center items-center pt-5 lg:pt-0 mt-[-7rem]">
+                    <div className="hidden lg:flex flex justify-center items-center pt-5 lg:pt-0 mt-[-9rem]">
                         <Image src={Servico2} alt="Wordpress" width={250}/>
                     </div>
                 </motion.div>
@@ -119,7 +119,7 @@ export default function PrincipaisServicos() {
                 </motion.div>
                 </div>
 
-                <div className="hidden md:flex justify-end mt-8 md:mt-24">
+                <div className="hidden md:flex justify-end mt-8 md:mt-24 lg:mt-0">
                     <Link href="/" className="text-primary text-2xl md:text-3xl font-semibold hover:text-secondary">Saiba Mais</Link>
                 </div>
             </div>

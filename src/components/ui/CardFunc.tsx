@@ -1,5 +1,5 @@
 'use client'
-import { motion } from "framer-motion";
+import { Easing, motion } from "framer-motion";
 
 import { useRef, useEffect } from "react";
 import { useAnimation, useInView } from "framer-motion";
@@ -13,10 +13,6 @@ interface CardFuncDados {
     text1: string;
     text2: string | null;
 }
-
-const borderRadiusStyle = {
-    borderRadius: "999px 2rem 2rem 999px"
-};
 
 
 export default function CardFunc ({ img, imgAlt, title, subTitle, text1, text2 }: CardFuncDados) {
@@ -35,21 +31,22 @@ export default function CardFunc ({ img, imgAlt, title, subTitle, text1, text2 }
         hidden: { clipPath: "inset(0 100% 0 0)" },
         visible: { 
             clipPath: "inset(0 0% 0 0)", 
-            transition: { duration: 1, ease: [0.42, 0, 0.58, 1] }
+            transition: { duration: 1, ease: [0.42, 0, 0.58, 1] as Easing }
         }
     };
 
     return(
-        <motion.div
-            ref={gatilhoRef}
+        <div
+        ref={gatilhoRef}
+        >
+            <motion.div
             initial="hidden"
             animate={controls}
             variants={variants}
-            style={borderRadiusStyle}
-            className="lg:flex lg:justify-evenly lg:items-center bg-white p-8 lg:p-0"
+            className="lg:flex lg:justify-evenly lg:items-center bg-white p-8 lg:p-0 lg:rounded-[999px_4rem_4rem_999px] rounded-4xl"
         >
             <div>
-                <Image src={img} alt={imgAlt} className=" lg:max-w-[490px] rounded-full" />
+                <Image src={img} alt={imgAlt} className=" lg:max-w-[490px] rounded-full mb-8 lg:mb-0" />
             </div>
             <div className="lg:w-[70%] lg:p-8">
                 <div>
@@ -63,5 +60,6 @@ export default function CardFunc ({ img, imgAlt, title, subTitle, text1, text2 }
                 </div>
             </div>
         </motion.div>
+        </div>
     )
 }
